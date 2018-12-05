@@ -46,7 +46,6 @@ public class EmployeeController {
 
 	@PostMapping("/save")
 	public List<Employee> saveEmployee(@RequestBody Employee employee) {
-
 		employeeRepository.save(employee);
 		return employeeRepository.findAll();
 
